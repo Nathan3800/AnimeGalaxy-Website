@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.link ul li {
+    display: inline;
+    padding: 20px;
+}
+
+ul {
+    text-align: center;
+    background-color: rgb(50, 119, 168);
+    font-size: 32px;
+}
+
+ul::after {
+    background-color: red;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: lightblue;
+}
+
+header {
+    background-color: aqua;
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 30px;
+    padding-right: 10em;
+    padding-top: 1px;
+}
+
+.column-1, .column-2 {
+    display: inline-block;
+}
+
+.column-1 {
+    width: 54%;
+}
+
+.column-2 {
+    width: 45%;
+}
+
+h1 {
+    text-align: left;
+}
+
+img {
+    margin: 15px 10px 0 0;
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+footer {
+    background-color: rgb(50, 119, 168);
+    font-size: 1em;
+    text-align: center;
+    font-style: italic;
+    color: black;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+main {
+    padding: 2em;
+    padding-right: 2em;
+    display: block;
+    margin-left: 170px;
+    padding-top: 1em;
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 13em;
+    align-items: center;
+}
+
+p {
+    margin-top: 2em;
+}
+
+.anime-section {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 40px;
+    padding-top: 2em;
+}
+
+.fairy-tail {
+    font-size: 35px;
+    display: flex;
+}
+
+.fairy-tail-section {
+    float: left;
+    width: 50%;
+    display: flex;
+}
+
+.misfit-demon-section {
+    float: left;
+    width: 50%;
+    display: flex;
+}
+
+.misfit-demon {
+    font-size: 35px;
+    display: flex;
+}
+
+.misfit-logo {
+    width: 200px;
+    height: 200px;
+    display: flex;
+}
+
+.fairy-tail-logo {
+    width: 200px;
+    height: 200px;
+    display: flex;
+}
