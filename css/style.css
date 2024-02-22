@@ -83,6 +83,7 @@ main {
 
 p {
     margin-top: 2em;
+    font-size: 25px;
 }
 
 .anime-section {
@@ -90,44 +91,67 @@ p {
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 25px;
     padding-top: 2em;
-}
-
-.fairy-tail {
-    font-size: 35px;
-    display: flex;
-}
-
-.fairy-tail-section {
-    float: left;
-    width: 50%;
-    display: flex;
-}
-
-.misfit-demon-section {
-    float: left;
-    width: 50%;
-    display: flex;
-}
-
-.misfit-demon {
-    font-size: 35px;
-    display: flex;
-}
-
-.misfit-logo {
-    width: 200px;
-    height: 200px;
-    display: flex;
-}
-
-.fairy-tail-logo {
-    width: 200px;
-    height: 200px;
-    display: flex;
 }
 
 .manhwa-section {
     font-size: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cards {
+    width: 300px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 15px;
+    transition: 0.2s;
+}
+
+.card-img img::before {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.card-body h2 {
+    text-align: center;
+}
+
+.card-body p {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-footer button {
+    width: 150px;
+    background: black;
+    color: white;
+    border-radius: 15px;
+    border: 2px solid black;
+    padding: 6px;
+    font-size: 17px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.card-footer button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.cards:hover {
+    box-shadow: 3.9px 7.8px 7.8px hsl(0deg 0% 0% / 0.38);
 }
