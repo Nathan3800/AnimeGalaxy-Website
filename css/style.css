@@ -155,3 +155,10 @@ h2 {
 .cards:hover {
     box-shadow: 3.9px 7.8px 7.8px hsl(0deg 0% 0% / 0.38);
 }
+
+@media (max-width: 768px) {
+    body {
+        background-color: grey;
+        display: flex;
+    }
+}
