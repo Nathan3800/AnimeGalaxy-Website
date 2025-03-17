@@ -1,24 +1,116 @@
 <!DOCTYPE html>
+<!--Nathan Shifflett, ADVD Cascading Style Sheets, 02/01/2024-->
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
-    <link rel="stylesheet" href="css/contact.css">
-</head>
-<body>
-    <div class="container">
-        <h2>Get in Touch!</h2>
-        <form onsubmit="emailSend(); reset(); return false;">
-            <input type="text" id="name" placeholder="name" name="name" required>
-            <input type="number" id="phone" placeholder="phone" name="phone" required>
-            <input type="email" id="email" placeholder="email" name="email" required>
-            <button type="submit" class="btn">Submit</button>
-        </form>
-    </div>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js">
-    </script>
-    <script src="js/contact form.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Anime Galaxy</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="container py-3">
+      <div class="row align-items-center">
+        <div class="col-md-2 text-center">
+          <img
+            src="/images/AnimeGalaxyLogo.jpg"
+            alt="Anime Galaxy Logo"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-md-10 text-center">
+          <h1>AnimeGalaxy</h1>
+        </div>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Anime.html">Anime</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Manhwa.html">Manhwa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Manhua.html">Manhua</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Manga.html">Manga</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container mt-4">
+      <div class="row">
+        <div class="col-12">
+          <p class="anime-section">
+            This is the Contact Form where you can fill it out if you have any questions!
+          </p>
+          <form>
+            <!-- 2 column grid layout with text inputs for the first and last names -->
+            <div class="row mb-4">
+              <div class="col">
+                <div data-mdb-input-init class="form-outline">
+                  <input type="text" id="form3Example1" class="form-control" />
+                  <label class="form-label" for="form3Example1">First name</label>
+                </div>
+              </div>
+              <div class="col">
+                <div data-mdb-input-init class="form-outline">
+                  <input type="text" id="form3Example2" class="form-control" />
+                  <label class="form-label" for="form3Example2">Last name</label>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Email input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+              <input type="email" id="form3Example3" class="form-control" />
+              <label class="form-label" for="form3Example3">Email address</label>
+            </div>
+          
+            <!-- Password input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+              <input type="password" id="form3Example4" class="form-control" />
+              <label class="form-label" for="form3Example4">Password</label>
+            </div>
+          
+            <!-- Checkbox -->
+            <div class="form-check d-flex justify-content-center mb-4">
+              <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
+            </div>
+          
+            <!-- Submit button -->
+            <button data-mdb-ripple-init type="button" class="btn btn-primary btn-block mb-4">Submit</button>
+          </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Nathan Shifflett | All Rights Reserved</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
